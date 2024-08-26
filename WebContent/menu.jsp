@@ -1,13 +1,15 @@
 <%@page pageEncoding="UTF-8" %>
 <header>
-    <div class="header-left">
-        <h1><a href="/teamL">学生管理システム</a></h1>
-    </div>
-    <div class="header-right">
-        <p>ようこそ●●さん</p>
-        <div class="login-btn">
-            <a href="/teamL/login/logout.action">ログアウト</a>
-            <a href="/teamL/login/pwChange.action">パスワード変更</a>
+    <div class="header-container">
+        <div class="header-left">
+            <h1><a href="/teamL">学生管理システム</a></h1>
+        </div>
+        <div class="header-right">
+            <p>ようこそ●●さん</p>
+            <div class="login-btn">
+                <a href="/teamL/login/logout.action">ログアウト</a>
+                <a href="/teamL/login/pwChange.action">パスワード変更</a>
+            </div>
         </div>
     </div>
     <div class="global-nav">
