@@ -25,3 +25,10 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
