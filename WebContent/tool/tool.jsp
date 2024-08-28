@@ -17,6 +17,9 @@
                 <button class="btn btn-secondary btn-lg"><a href="●●.action"
                         style="text-decoration:none;">戻る</a></button>
 
+                <!-- 次へボタン -->
+                <button class="btn btn-primary btn-lg" type="submit">次へ</button>    
+
                 <!-- 訓告など -->
                 <span class="badge bg-danger">訓告済</span>
 

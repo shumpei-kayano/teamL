@@ -32,3 +32,22 @@ footer {
     align-items: center;
     margin: 10px 0;
 }
+.form-container {
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 50px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.attend-btn-next {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}
+
+.content-title {
+    margin: 30px 0 0 50px;
+}
