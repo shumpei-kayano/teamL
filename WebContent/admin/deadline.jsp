@@ -2,9 +2,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@include file="../header.jsp" %>
 <main class="content">
-    <h2> 入力権限付与</h2>
-    
-
-
+    auth.jsp
 </main>
 <%@include file="../footer.html" %>
