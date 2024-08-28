@@ -3,16 +3,18 @@
 <%@include file="../header.jsp" %>
 <main class="content">
 	<div class="d-flex align-items-center ms-3">
-        <form action="#" method="GET">
+        <form action="ShowLeadingList.action" method="GET">
             <div class="mb-3">
+            <h2>指導記録</h2>
                 <!-- ラベル -->
                 <label for="classDropdown" class="form-label">クラス</label>
                 <!-- プルダウンメニュー -->
                 <select class="form-select" id="classDropdown" name="class" required>
                     <option value="" selected disabled>クラスを選択してください</option>
-                    <option value="1">クラス 1</option>
-                    <option value="2">クラス 2</option>
-                    <option value="3">クラス 3</option>
+                    <option value="101">101</option>
+                    <option value="102">102</option>
+                    <option value="201">201</option>
+                    <option value="202">202</option>
                 </select>
             </div>
             <!-- 表示ボタン -->

@@ -5,11 +5,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import tool.Action;
 
-public class selectStudentListAction extends Action {
+public class SelectClassAction extends Action {
 	public String execute(
 		HttpServletRequest request, HttpServletResponse response
 	) throws Exception {
 
-		return "selectStudentList.jsp";
+		return "selectClass.jsp";
 	}
 }

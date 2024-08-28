@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li><a href="/teamL/attend/AttendSelect.action">出欠管理</a></li>
-                <li><a href="/teamL/leading/selectStudentList.action">指導記録</a></li>
+                <li><a href="/teamL/leading/SelectClass.action">指導記録</a></li>
                 <li><a href="/teamL/grades/GradesList.action">成績管理</a></li>
                 <li><a href="/teamL/report/ReportList.action">帳票出力</a></li>
                 <li><a href="/teamL/admin/Auth.action">管理職機能</a></li>
