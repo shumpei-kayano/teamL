@@ -3,13 +3,13 @@
 <%@include file="../header.jsp" %>
 <main class="content">
 	<div class="d-flex align-items-center ms-3">
-        <form action="ShowLeadingList.action" method="GET">
+        <form action="ShowStudentList.action" method="GET">
             <div class="mb-3">
             <h2>指導記録</h2>
                 <!-- ラベル -->
                 <label for="classDropdown" class="form-label">クラス</label>
                 <!-- プルダウンメニュー -->
-                <select class="form-select" id="classDropdown" name="class" required>
+                <select id="class" class="form-control" name="className" aria-label="Default select example" required>
                     <option value="" selected disabled>クラスを選択してください</option>
                     <option value="101">101</option>
                     <option value="102">102</option>
