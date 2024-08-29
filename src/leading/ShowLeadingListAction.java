@@ -5,14 +5,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import tool.Action;
 
-public class ShowStudentListAction extends Action {
+public class ShowLeadingListAction extends Action {
 	public String execute(
 			HttpServletRequest request, HttpServletResponse response
-		) throws Exception {
+		) throws Exception{
 
-		String className =request.getParameter("className");
-		request.setAttribute("className", className);
+		    String className = request.getParameter("className");
+			request.setAttribute("className", className);
 
-			return "showStudentList.jsp";
+			return "showLeadingList.jsp";
 		}
+
 }
