@@ -10,7 +10,7 @@ public class RecordUpdateExecuteAction extends Action {
 			HttpServletRequest request, HttpServletResponse response
 		) throws Exception {
 
-			return "selectClass.jsp";
+			return "recordUpdate_complete.jsp";
 		}
 
 }
