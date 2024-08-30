@@ -29,8 +29,8 @@
                 <div class="col-2 border-box text-center">日付</div>
                 <div class="col-4 border-box text-center">2024/5/29</div>
                 <div class="col-2 border-box text-center">入力者</div>
-                <div class="col-2 border-box text-center">編集</div>
-                <div class="col-2 border-box text-center">削除</div>
+                <div class="col-2 border-box text-center"><a class="btn btn-primary btn-md" href="RecordUpdate.action">編集</a></div>
+                <div class="col-2 border-box text-center"><a class="btn btn-danger btn-md" href="RecordRegist.action">削除</a></div>
             </div>
             <div class="row">
                 <div class="col-12 border-box text-center">指導記録一件</div>
@@ -45,7 +45,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <a class="btn btn-secondary btn-md" href="ShowStudentList.action?id=${className}">戻る</a>
+            <a class="btn btn-secondary btn-md" href="RecordList.action?id=${className}">戻る</a>
         </div>
     </div>
 </div>

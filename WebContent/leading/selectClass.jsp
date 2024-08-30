@@ -3,7 +3,7 @@
 <%@include file="../header.jsp" %>
 <main class="content">
 	<div class="d-flex align-items-center ms-3">
-        <form action="ShowStudentList.action" method="GET">
+        <form action="RecordList.action" method="GET">
             <div class="mb-3">
             <h2>指導記録</h2>
                 <!-- ラベル -->

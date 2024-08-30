@@ -5,14 +5,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import tool.Action;
 
-public class ShowStudentListAction extends Action {
+public class RecordRegistExecuteAction extends Action {
 	public String execute(
 			HttpServletRequest request, HttpServletResponse response
 		) throws Exception {
 
-		String className =request.getParameter("className");
-		request.setAttribute("className", className);
-
-			return "showStudentList.jsp";
+			return "recordRegist_complete.jsp";
 		}
 }

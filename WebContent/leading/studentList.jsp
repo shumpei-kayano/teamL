@@ -38,13 +38,13 @@
 				<td>1234567</td>
 				<td>山田太郎</td>
 				<td>3</td>
-				<td><a href="ShowLeadingList.action">参照</a></td>
+				<td><a href="RecordListExecute.action">参照</a></td>
 			</tr>
 			<tr>
 				<td>1234567</td>
 				<td>大原花子</td>
 				<td>5</td>
-				<td><a href="ShowLeadingList.action">参照</a></td>
+				<td><a href="RecordListExecute.action">参照</a></td>
 			</tr>
 		</tbody>
 	</table>

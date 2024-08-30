@@ -2,7 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@include file="../header.jsp"%>
 <main class="content">
-<form action="#" method="get">
+<form action="RecordRegistExecute.action" method="get">
 	<div class="form-group">
 		<label for="student_name">学生</label> <input type="text"
 			class="form-control" id="student_name" name="student_name"
@@ -53,7 +53,7 @@
 
 <!-- 戻るときはデータを送る必要はないため、リンクで全ページに戻る -->
 <button class="btn btn-secondary btn-md">
-	<a href="ShowLeadingList.action" style="text-decoration: none;">戻る</a>
+	<a href="RecordList.action" style="text-decoration: none;">戻る</a>
 </button>
 </main>
 <%@include file="../footer.html"%>
