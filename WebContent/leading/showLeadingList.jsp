@@ -7,7 +7,7 @@
         <tr class="bg-primary fs-5">
             <th class="text-center col-2">学生</th>
             <td class="text-center col-2">大原太郎</td>
-            <td class="text-center col-2"><a class="btn btn-primary" href="#">新規</a></td>
+            <td class="text-center col-2"><a class="btn btn-primary" href="RecordRegist.action">新規</a></td>
         </tr>
     </table>
 
