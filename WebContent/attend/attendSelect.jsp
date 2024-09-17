@@ -3,6 +3,12 @@
         <%@include file="../header.jsp" %>
             <main class="content">
                 <h2 class="content-title">出欠管理</h2>
+                <!-- もしも$messageがあった場合、エラーメッセージを出力 -->
+                <c:if test="${not empty message}">
+                    <div class="alert alert-danger" role="alert">
+                        ${message}
+                    </div>
+                </c:if>
                 <div class="form-container">
                     <form method="post" action="AttendRegist.action">
                         <div class="form-group">
@@ -11,7 +17,8 @@
                         </div>
                         <div class="form-group">
                             <label for="month">月</label>
-                            <select id="month" class="form-control" name="month" aria-label="Default select example" required>
+                            <select id="month" class="form-control" name="month" aria-label="Default select example"
+                                required>
                                 <option value="">選択してください</option>
                                 <c:forEach var="month" begin="1" end="12">
                                     <option value="${month}">${month}月</option>
@@ -20,7 +27,8 @@
                         </div>
                         <div class="form-group">
                             <label for="class">クラス</label>
-                            <select id="class" class="form-control" name="class" aria-label="Default select example" required>
+                            <select id="class" class="form-control" name="classNum" aria-label="Default select example"
+                                required>
                                 <option value="">選択してください</option>
                                 <option value="101">101</option>
                                 <option value="102">102</option>
@@ -28,7 +36,7 @@
                                 <option value="202">202</option>
                             </select>
                         </div>
-                        <button class="btn btn-primary btn-lg attend-btn-next" type="submit">次へ</button>    
+                        <button class="btn btn-primary btn-lg right-bottom" type="submit">次へ</button>
                     </form>
                 </div>
             </main>

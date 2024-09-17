@@ -20,6 +20,7 @@
 .content {
     flex: 1;
     background-color: burlywood;
+    position: relative;
 }
 footer {
     text-align: center;
@@ -42,10 +43,11 @@ footer {
     width: 100%;
 }
 
-.attend-btn-next {
+/* 右下に配置するクラス */
+.right-bottom {
     position: absolute;
-    right: 100px;
-    bottom: 100px;
+    right: 40px;
+    bottom: 40px;
 }
 
 .content-title {
