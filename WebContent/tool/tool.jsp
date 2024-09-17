@@ -3,6 +3,10 @@
         <%@include file="../header.jsp" %>
             <main class="content p-2">
 
+                <!-- 各種ページタイトル -->
+                <!-- 左側と上にマージンが設定されています。 -->
+                <h2 class="content-title">各種ページタイトル</h2>
+
                 <!-- 登録・実行ボタン -->
                 <!-- ボタンのtype属性をsubmitにすることで送る -->
                 <button class="btn btn-success btn-lg" type="submit">登録</button>
@@ -128,5 +132,8 @@
                 <!-- テキストの色を変える -->
                 <div><a class="text-danger" href="https://getbootstrap.jp/docs/5.3/utilities/colors/">テキストの色を変える</a>
                 </div>
+
+                <!-- mainタグ直下においてください。main（色塗り部分）を基準に右下40pxの余白を設定しています。 -->
+                <button class="btn btn-success btn-lg right-bottom" type="submit">ボタンを右下に配置する</button>
             </main>
             <%@include file="../footer.html" %>
