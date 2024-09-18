@@ -29,7 +29,7 @@
 
 				<!-- 状況ラジオボタン -->
 				<div class="col-5">
-					<p id="condition">状況</p>
+					<p id="condition" class='mt-3 fs-5'>状況</p>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
 							id="radio1" value="1"> <label
