@@ -6,7 +6,7 @@ public class Teacher implements Serializable {
 
     private String teacherId;     // teacher_id: varchar
     private String teacherName;   // teacher_name: varchar
-    private char classNum;        // class_num: char
+    private String classNum;        // class_num: char
     private String loginId;       // login_id: varchar
     private String password;      // password: varchar
     private Boolean grantFlg;     // grant_flg: Boolean
@@ -33,11 +33,11 @@ public class Teacher implements Serializable {
         this.teacherName = teacherName;
     }
 
-    public char getClassNum() {
+    public String getClassNum() {
         return classNum;
     }
 
-    public void setClassNum(char classNum) {
+    public void setClassNum(String classNum) {
         this.classNum = classNum;
     }
 

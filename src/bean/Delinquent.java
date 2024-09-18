@@ -2,12 +2,13 @@ package bean;
 import java.io.Serializable;
 import java.util.Date;
 
+
 public class Delinquent implements Serializable {
 
     private String delinquentId;   // delinquent_id: varchar
     private String studentId;      // student_id: varchar
     private Date delinquentDate;   // delinquent_date: date
-    private char conditionId;      // condition_id: char
+    private String conditionId;      // condition_id: char
 
     // コンストラクタ
     public Delinquent() {}
@@ -37,11 +38,11 @@ public class Delinquent implements Serializable {
         this.delinquentDate = delinquentDate;
     }
 
-    public char getConditionId() {
+    public String getConditionId() {
         return conditionId;
     }
 
-    public void setConditionId(char conditionId) {
+    public void setConditionId(String conditionId) {
         this.conditionId = conditionId;
     }
 

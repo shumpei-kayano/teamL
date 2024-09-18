@@ -3,18 +3,18 @@ import java.io.Serializable;
 
 public class Condition implements Serializable {
 
-    private char conditionId;       // condition_id: char
+    private String conditionId;       // condition_id: char
     private String condition;       // condition: varchar
 
     // コンストラクタ
     public Condition() {}
 
     // getterとsetter
-    public char getConditionId() {
+    public String getConditionId() {
         return conditionId;
     }
 
-    public void setConditionId(char conditionId) {
+    public void setConditionId(String conditionId) {
         this.conditionId = conditionId;
     }
 

@@ -5,9 +5,9 @@ public class Grades implements Serializable {
 
     private String gradesId;       // grades_id: varchar
     private String entYear;        // ent_year: varchar
-    private char academicYear;     // academic_year: char
+    private String academicYear;     // academic_year: char
     private String month;          // month: varchar
-    private char subjectId;        // subject_id: char
+    private String subjectId;        // subject_id: char
     private String studentId;      // student_id: varchar
     private int score;             // score: int
 
@@ -31,11 +31,11 @@ public class Grades implements Serializable {
         this.entYear = entYear;
     }
 
-    public char getAcademicYear() {
+    public String getAcademicYear() {
         return academicYear;
     }
 
-    public void setAcademicYear(char academicYear) {
+    public void setAcademicYear(String academicYear) {
         this.academicYear = academicYear;
     }
 
@@ -47,11 +47,11 @@ public class Grades implements Serializable {
         this.month = month;
     }
 
-    public char getSubjectId() {
+    public String getSubjectId() {
         return subjectId;
     }
 
-    public void setSubjectId(char subjectId) {
+    public void setSubjectId(String subjectId) {
         this.subjectId = subjectId;
     }
 

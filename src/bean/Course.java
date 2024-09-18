@@ -3,18 +3,18 @@ import java.io.Serializable;
 
 public class Course implements Serializable {
 
-    private char courseId;       // course_id: char
+    private String courseId;       // course_id: char
     private String courseName;   // course_name: varchar
 
     // コンストラクタ
     public Course() {}
 
     // getterとsetter
-    public char getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(char courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 
