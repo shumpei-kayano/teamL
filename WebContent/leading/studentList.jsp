@@ -38,13 +38,19 @@
 				<td>1234567</td>
 				<td>山田太郎</td>
 				<td>3</td>
-				<td><a href="RecordListExecute.action">参照</a></td>
+				<td><button class="btn btn-primary btn-sm left-bottom">
+						<a href="RecordListExecute.action" style="text-decoration: none;">参照</a>
+					</button>
+				</td>
 			</tr>
 			<tr>
 				<td>1234567</td>
 				<td>大原花子</td>
 				<td>5</td>
-				<td><a href="RecordListExecute.action">参照</a></td>
+				<td><button class="btn btn-primary btn-sm left-bottom">
+						<a href="RecordListExecute.action" style="text-decoration: none;">参照</a>
+					</button>
+				</td>
 			</tr>
 		</tbody>
 	</table>
