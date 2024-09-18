@@ -29,37 +29,37 @@
 
 				<!-- 状況ラジオボタン -->
 				<div class="col-5">
-					<p id="condition" class='mt-3 fs-5'>状況</p>
+					<p id="condition" >状況</p>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
-							id="radio1" value="1"> <label
+							id="radio1" value="1">
 							class="form-check-label fs-5" for="radio1"> 欠席 </label>
 					</div>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
-							id="radio2" value="2"> <label
+							id="radio2" value="2">
 							class="form-check-label fs-5" for="radio2"> 遅刻 </label>
 					</div>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
-							id="radio3" value="3"> <label
+							id="radio3" value="3">
 							class="form-check-label fs-5" for="radio3"> 早退 </label>
 					</div>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
-							id="radio4" value="4"> <label
+							id="radio4" value="4">
 							class="form-check-label fs-5" for="radio4"> その他 </label>
 					</div>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
-							id="radio5" value="5"> <label
+							id="radio5" value="5">
 							class="form-check-label fs-5" for="radio5"> なし </label>
 					</div>
 				</div>
 			</div>
 
 			<!-- 記録フィールド -->
-			<label for="content" class='mt-3 fs-5'>記録</label>
+			<label for="content" class='mt-3 fs-6'>記録</label>
 			<textarea class="form-control" id="content" name="content" rows=10></textarea>
 
 			<!-- 登録ボタン -->
