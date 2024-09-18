@@ -3,8 +3,8 @@ import java.io.Serializable;
 
 public class Subject implements Serializable {
 
-    private char subjectId;        // subject_id: char
-    private char academicYear;     // academic_year: char
+    private String subjectId;        // subject_id: char
+    private String academicYear;     // academic_year: char
     private String subjectName;    // subject_name: varchar
     private Boolean requiredFlg;   // required_flg: Boolean
     private int credit;            // credit: int
@@ -14,19 +14,19 @@ public class Subject implements Serializable {
     public Subject() {}
 
     // getterとsetter
-    public char getSubjectId() {
+    public String getSubjectId() {
         return subjectId;
     }
 
-    public void setSubjectId(char subjectId) {
+    public void setSubjectId(String subjectId) {
         this.subjectId = subjectId;
     }
 
-    public char getAcademicYear() {
+    public String getAcademicYear() {
         return academicYear;
     }
 
-    public void setAcademicYear(char academicYear) {
+    public void setAcademicYear(String academicYear) {
         this.academicYear = academicYear;
     }
 

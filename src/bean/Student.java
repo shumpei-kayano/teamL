@@ -6,9 +6,9 @@ public class Student implements Serializable {
 
     private String studentId;        // student_id: varchar
     private String studentName;      // student_name: varchar
-    private char classNum;           // class_num: char
-    private char entYear;            // ent_year: char
-    private char courseId;           // course_id: char
+    private String classNum;           // class_num: char
+    private String entYear;            // ent_year: char
+    private String courseId;           // course_id: char
     private Date dropoutDate;        // dropout_date: date
     private Date kunkokuDate;        // kunkoku_date: date
     private Date kaikokuDate;        // kaikoku_date: date
@@ -36,27 +36,27 @@ public class Student implements Serializable {
         this.studentName = studentName;
     }
 
-    public char getClassNum() {
+    public String getClassNum() {
         return classNum;
     }
 
-    public void setClassNum(char classNum) {
+    public void setClassNum(String classNum) {
         this.classNum = classNum;
     }
 
-    public char getEntYear() {
+    public String getEntYear() {
         return entYear;
     }
 
-    public void setEntYear(char entYear) {
+    public void setEntYear(String entYear) {
         this.entYear = entYear;
     }
 
-    public char getCourseId() {
+    public String getCourseId() {
         return courseId;
     }
 
-    public void setCourseId(char courseId) {
+    public void setCourseId(String courseId) {
         this.courseId = courseId;
     }
 
