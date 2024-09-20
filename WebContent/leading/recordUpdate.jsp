@@ -1,35 +1,38 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@include file="../header.jsp"%>
+
+
 <main class="content">
 <div class="container">
-	<form action="RecordRegistExecute.action" method="get">
+	<form action="RecordRegistExecute.action" method="post">
 		<div class="form-group">
 			<div class="row">
 				<!-- 氏名フィールド -->
-				<div class="col-3">
-					<label for="student_name">学生</label> <input type="text"
-						class="form-control" id="student_name" name="student_name"
-						value="大原太郎" required>
+				<div class="col-2 mt-3">
+					<dl class='mt-1'>
+						<dt class="text-center fs-4" style="border: 1px solid black;">学生</dt>
+						<dd class="text-center fs-4" style="border: 1px solid black;">大原太郎</dd>
+					</dl>
 				</div>
 
 				<!-- 欠席累計 -->
-				<div class="col-1">
-					<dl>
-						<dt>欠席累計</dt>
-						<dd>●●日</dd>
+				<div class="col-2 mt-3">
+					<dl class='mt-1'>
+						<dt class="text-center fs-4" style="border: 1px solid black;">欠席累計</dt>
+						<dd class="text-center fs-4" style="border: 1px solid black;">●●日</dd>
 					</dl>
 				</div>
 
 				<!-- 日付フィールド -->
-				<div class="col-3">
-					<label for="date">日付</label> <input type="date"
-						class="form-control" id="date" name="date" required>
+				<div class="col-2">
+					<label for="date" class="fs-4 mb-3 mt-1">日付</label> <input
+						type="date" class="form-control" id="date" name="date" required>
 				</div>
 
 				<!-- 状況ラジオボタン -->
-				<div class="col-5">
-					<p id="condition">状況</p>
+				<div class="col-6">
+					<p id="condition" class="fs-4">状況</p>
 					<div class="form-check-inline">
 						<input class="form-check-input" type="radio" name="condition"
 							id="radio1" value="1"> <label
@@ -59,18 +62,24 @@
 			</div>
 
 			<!-- 記録フィールド -->
-			<label for="content">記録</label>
+			<label for="content" class="mt-3 mb-3 fs-4">記録</label>
 			<textarea class="form-control" id="content" name="content" rows=10></textarea>
 
-			<!-- 登録ボタン -->
-			<button class="btn btn-success btn-lg" type="submit">登録</button>
+			<!-- 登録ボタンと戻るボダン -->
+			<div class="row">
+				<!-- 戻るボタン -->
+				<div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3 col-6">
+					<button class="btn btn-secondary btn-lg">
+						<a href="RecordListExecute.action" style="text-decoration: none;">戻る</a>
+					</button>
+				</div>
+				<!-- 登録ボタン -->
+				<div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3 col-6">
+					<button class="btn btn-success btn-lg" type="submit">登録</button>
+				</div>
+			</div>
 		</div>
 	</form>
-
-	<!-- 戻るボタン -->
-	<button class="btn btn-secondary btn-lg left-bottom">
-		<a href="RecordListExecute.action" style="text-decoration: none;">戻る</a>
-	</button>
 </div>
 </main>
 <%@include file="../footer.html"%>
