@@ -4,11 +4,12 @@
 <main class="content">
 	<!-- 学生氏名と新規作成ボタン -->
 	<div class="container border-box mt-5">
-		<table class="table table-bordered">
-			<tr class="bg-primary fs-5">
-				<th class="text-center col-2 fs-3">学生</th>
-				<td class="text-center col-2 fs-3">大原太郎</td>
-				<td class="text-center col-2"><a class="btn btn-primary btn-lg"
+
+		<table class="table table-bordered text-center">
+			<tr class="bg-primary fs-3">
+				<th class="col-2">学生</th>
+				<td class="col-2">大原太郎</td>
+				<td class="col-2"><a class="btn btn-primary btn-lg"
 					href="RecordRegist.action">新規</a></td>
 			</tr>
 		</table>
@@ -18,18 +19,13 @@
 
 			<!-- 日付一覧部分 -->
 			<div class="col-2 border-box text-center" >
-				<p>日付一覧</p>
-				<div class="row date-row"style="width: 100%; height: 200px; overflow-y: scroll; border: 1px black solid;">
-				<a href="#">2023/01/16</a><br> <a href="#">2023/01/18</a><br>
-				<a href="#">2023/01/20</a><br> <a href="#">2023/02/13</a><br>
-				<a href="#">2023/02/15</a><br> <a href="#">2023/02/22</a><br>
-				<a href="#">2023/02/28</a><br> <a href="#">2023/03/20</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
-				<a href="#">2023/03/25</a><br> <a href="#">2023/04/05</a><br>
+				<div class="alert alert-light fs-5" role="alert">
+  					日付一覧
+				</div>
+				<div class="row date-row overflow-auto sm-5" style="width: 100%; height: 220px; border: 1px black solid;">
+				<% for(int i = 0; i < 20; i++){ %>
+					<a href="#" class="mb-2">2024/●●/●●</a>
+				<% } %>
 				</div>
 			</div>
 
@@ -47,7 +43,9 @@
 						<a class="btn btn-danger btn-lg" href="RecordDelete.action">削除</a>
 					</div>
 				</div>
-					<div class="row date-row mt-1"style="width: 100%; height: 200px; overflow-y: scroll; border: 1px black solid;">
+
+					<p class="fs-4 mt-2 mb-2">指導記録</p>
+					<div class="row date-row overflow-auto" style="width: 100%; height: 200px; border: 1px black solid;">
 						本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文文本文文本文文本文
 						文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文
 						文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文文本文本文本文文本文文本文文本
@@ -68,7 +66,7 @@
 		</div>
 
 		<!-- 戻るボタン -->
-		<div class="d-grid gap-2 d-md-flex justify-content-md-start">
+		<div class="d-grid gap-2 d-md-flex justify-content-md-start mt-3">
 			<a class="btn btn-secondary btn-lg" href="RecordList.action?id=${className}">戻る</a>
 		</div>
 
