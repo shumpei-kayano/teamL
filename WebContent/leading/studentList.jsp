@@ -20,40 +20,37 @@
 		<!-- 表示ボタン -->
 		<button class="btn btn-primary" type="submit">表示</button>
 	</form>
+	<p class="mt-3 ms-5 fs-5">現在選択されているクラスは <span class="badge text-bg-primary">${className}</span> です</p>
 
-	<p class="m-3 fs-5">現在選択されているクラスは <span class="badge text-bg-primary">${className}</span> です</p>
 
 	<!-- テーブル -->
-	<table class="table table-striped m-3">
+	<div class="row">
+	<div class="col-6">
+	<table class="table table-striped mt-3 ms-5 text-center">
 		<thead>
 			<tr>
-				<th>学生番号</th>
-				<th>氏名</th>
-				<th>欠席累計</th>
-				<th>指導記録</th>
+				<th scope="col">学生番号</th>
+				<th scope="col">氏名</th>
+				<th scope="col">欠席累計</th>
+				<th scope="col">指導記録</th>
 			</tr>
 		</thead>
 		<tbody>
+		<% for(int i=0; i < 29; i++){ %>
 			<tr>
 				<td>1234567</td>
 				<td>山田太郎</td>
 				<td>3</td>
 				<td><button class="btn btn-primary btn-sm left-bottom">
-						<a href="RecordListExecute.action" style="text-decoration: none;">参照</a>
+					<a href="RecordListExecute.action" style="text-decoration: none;">参照</a>
 					</button>
 				</td>
 			</tr>
-			<tr>
-				<td>1234567</td>
-				<td>大原花子</td>
-				<td>5</td>
-				<td><button class="btn btn-primary btn-sm left-bottom">
-						<a href="RecordListExecute.action" style="text-decoration: none;">参照</a>
-					</button>
-				</td>
-			</tr>
+		<% } %>
 		</tbody>
 	</table>
+	</div>
+	</div>
 </div>
 
 </main>
